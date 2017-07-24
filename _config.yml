@@ -1,0 +1,26 @@
+# Site settings
+title: "Paper Jekyll Theme"
+description: > 
+  Write a description of your website here.
+
+author: Johnny Appleseed
+email: johnny@appleseed.com
+twitter_username:
+github_username:
+
+baseurl: "/paper-jekyll-theme" # the subpath of your site, e.g. /blog
+url: "https://deadbeef.me" # the base hostname & protocol for your site
+
+google_analytics_id: UA-1111111111-1
+disqus_id:
+
+# Build settings
+include: [_pages]
+markdown: kramdown
+permalink: /:year/:month/:title
+
+sass:
+    style: compressed
+
+exclude: [vendor]
+

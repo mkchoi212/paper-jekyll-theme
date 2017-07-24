@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Page
+   ========================================================================== */
+
+.c-page {
+
+}
+
+.c-page__header {
+    margin-bottom: 10rem; // 100px
+
+    h1 {
+        margin-bottom: 2.5rem; // 25px
+        @include fs--heading-2;
+        color: $c-base__02;
+    }
+
+    p {
+        @include fs--meta;
+    }
+}
+
+.c-page__footer {
+    margin-bottom: 10rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    p {
+        @include fs--body;
+        color: $c-base__01;
+    }
+}
+

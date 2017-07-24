@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Tip
+   ========================================================================== */
+
+.c-tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.c-tags li {
+  float: left; 
+}
+
+.c-tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 50px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.c-tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.c-tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.c-tag:hover {
+  background-color: $c-accent__blue;
+  color: white;
+}
+
+.c-tag:hover::after {
+   border-left-color: $c-accent__blue;
+}
+
+.c-c-tag {
+    margin-right: 1rem;
+    position: relative;
+    white-space: nowrap;
+    @include fs--body;
+    &:before {
+        color: $c-base__0;
+        content: '#\2009';
+    }
+}
+

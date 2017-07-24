@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+// Clearfix
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Font families
+@mixin ff--sans-serif($font-weight: normal) {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: $font-weight;
+}
+
+@mixin ff--code {
+    font-family: 'Roboto Mono', monospace;
+}
+
+// Font sizing
+@mixin fs--title {
+    line-height: 1.5;
+    font-size: 4.8rem; // 48px
+}
+
+@mixin fs--heading-1 {
+    line-height: 1.5;
+    font-size: 3.2rem; // 32px
+}
+
+@mixin fs--heading-2 {
+    line-height: 1.5;
+    font-size: 2.4rem; // 24px
+}
+
+@mixin fs--heading-3 {
+    line-height: 1.5;
+    font-size: 2rem; // 20px
+}
+
+@mixin fs--heading-4 {
+    line-height: 1.6;
+    font-size: 1.8rem; // 18px
+}
+
+@mixin fs--body {
+    line-height: 1.5;
+    font-size: 1.8rem; // 18px
+}
+
+@mixin fs--meta {
+    line-height: 1;
+    font-size: 1.8rem; // 18px
+}
+
+@mixin fs--caption {
+    line-height: 1;
+    font-size: 1.6rem; // 16px
+}
+
+@mixin fs--code {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+// Visually hide content
+@mixin visually-hidden {
+    position: absolute;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
