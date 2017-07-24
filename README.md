@@ -15,11 +15,12 @@ Paper is a minimal Jekyll theme. Perfect for hosting your personal site, blog, o
 Live demo of the theme can be seen [here](https://deadbeef.me/paper-jekyll-theme/). I'm also currently using this theme on my [personal blog](https://www.deadbeef.me).
 
 ## Features
-- Compatible with Jekyll 3.x and Github Pages
+- Compatible with Jekyll 3.x and **Github Pages**
 - Live local reloading for faster development
-- Responsive layout built-in
+- **Responsive layout** built-in
 - Supports Jekyll's built-in Sass/SCSS preprocessor
-- Supports Google Analytics
+- Supports **Google Analytics**
+- Supports **Disqus** for commenting
 - Minimum Dependencies
 - Rakefile for automation
     - `rake check`    - Check links/html files of the generated site
