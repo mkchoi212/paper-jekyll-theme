@@ -31,7 +31,7 @@ layout: page
         <div class="wrapper" id="right">
           <small>{{page.next.date | date: "%b %-d, %Y"}} <b>Next</b></small>
           <br>
-          <a class="no-hov" href="{{ page.previous.url | prepend: site.baseurl }}">{{page.next.title}} &raquo;</a>
+          <a class="no-hov" href="{{ page.next.url | prepend: site.baseurl }}">{{page.next.title}} &raquo;</a>
         </div>
 		{% endif %}
 		</div>
