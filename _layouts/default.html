@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body>
-        <main class="u-container">
-        {{ content }}
-        </main>
+  {% include head.html %}
+  <body>
+    <main class="u-container">
+      {{ content }}
+    </main>
     {% if jekyll.environment == 'production' %}
-      {% include analytics.html %}
+    {% include analytics.html %}
     {% endif %}
-    </body>
+  </body>
 </html>
