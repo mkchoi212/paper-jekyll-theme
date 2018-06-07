@@ -7,7 +7,7 @@ tags: test, style
 comments: true
 ---
 
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
+Below is just about everything you'll need to style in the theme. Check the [source code](https://raw.githubusercontent.com/mkchoi212/paper-jekyll-theme/master/_posts/2016-08-15-style-test.md) to see the many embedded elements within paragraphs.
 
 ---
 
