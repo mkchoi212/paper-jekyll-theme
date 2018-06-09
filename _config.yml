@@ -5,8 +5,8 @@ description: >
 
 author: Johnny Appleseed
 email: johnny@appleseed.com
-twitter_username:
-github_username:
+twitter_username: _HairForceOne
+github_username: mkchoi212
 
 baseurl: "/paper-jekyll-theme" # the subpath of your site, e.g. /blog
 url: "https://deadbeef.me" # the base hostname & protocol for your site
