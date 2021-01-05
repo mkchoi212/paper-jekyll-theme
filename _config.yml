@@ -8,7 +8,7 @@ email: zndnfjqbd1206@gmail.com
 twitter_username: None
 github_username: meanz1
 
-baseurl: "/paper-jekyll-theme" # the subpath of your site, e.g. /blog
+baseurl: " " # the subpath of your site, e.g. /blog
 url: "https://meanz1.github.io" # the base hostname & protocol for your site
 
 google_analytics_id: UA-1111111111-1
