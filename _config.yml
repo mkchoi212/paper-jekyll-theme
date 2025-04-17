@@ -1,17 +1,25 @@
 # Site settings
-title: "Paper Jekyll Theme"
-description: > 
-  Write a description of your website here.
+title: "The Magic of Sage"
+tagline: The magic of sage! # it will display as the sub-title
+description: 
 
-author: Johnny Appleseed
-email: johnny@appleseed.com
-twitter_username: _HairForceOne
-github_username: mkchoi212
+author: Atit Vakharia
+email: atit.vakharia@gmail.com
+twitter_username: avakharia
+github_username: avakharia
 
-baseurl: "/test" # the subpath of your site, e.g. /blog
-url: "https://deadbeef.me" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 
-google_analytics_id: UA-1111111111-1
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: en
+
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: America/Chicago
+
+google_analytics_id: G-LDWGSSKWHE
 disqus_id:
 
 # Build settings
