@@ -9,7 +9,7 @@ twitter_username: avakharia
 github_username: avakharia
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://avakharia.github.io/" # the base hostname & protocol for your site
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
