@@ -20,4 +20,4 @@ To put this in software engineering terms best I can: King Shrenik's journey res
 
 P.S. I leverage AI tools (mostly Gemini or Grok) to help me refine my thoughts.
 
-![_config.yml]({{ site.baseurl }}/images/uncharted_territory.png)
+![_config.yml]({{ site.baseurl }}/assets/uncharted_territory.png)
