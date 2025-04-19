@@ -1,31 +1,27 @@
 <header class="c-page__header">
-  <div style="text-align: left; float: left; margin-right: 2%;">
-    <h1>{{ site.title}}</h1>
+  <div id="header">
+    <div style="text-align: left; float: left; margin-right: 2%;">
+      <h1>{{ site.title}}</h1>
+    </div>
+    <div style="text-align: right; float: right;">
+      {% if site.twitter_username %}
+        <a href="https://twitter.com/{{ site.twitter_username }}">
+          <img src="{{ site.baseurl }}/assets/x.png" alt="X" width="36" height="36" />
+        </a>
+        {% if site.github_username %}<span class="u-separate"></span>{% endif %}
+      {% endif %}
+      {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}">Github</a>
+        {% if site.linkedin_username %}<span class="u-separate"></span>{% endif %}
+      {% endif %}
+      {% if site.linkedin_username %}
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+          <img src="{{ site.baseurl }}/assets/linkedin.png" alt="LinkedIn" width="30" height="30" />
+        </a>
+      {% endif %}
+    </div>
   </div>
-  <div style="text-align: right; float: right;">
-    {% if site.twitter_username %}
-      <a href="https://twitter.com/{{ site.twitter_username }}">
-        <img src="{{ site.baseurl }}/assets/x.png" alt="X" width="36" height="36" />
-      </a>
-      {% if site.github_username %}<span class="u-separate"></span>{% endif %}
-    {% endif %}
-    {% if site.github_username %}
-      <a href="https://github.com/{{ site.github_username }}">Github</a>
-      {% if site.linkedin_username %}<span class="u-separate"></span>{% endif %}
-    {% endif %}
-    {% if site.linkedin_username %}
-      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-        <img src="{{ site.baseurl }}/assets/linkedin.png" alt="LinkedIn" width="30" height="30" />
-      </a>
-    {% endif %}
-  </div>
-  <p>&nbsp;</p>
-  {% if page.title == 'Home' %}
-  <div>
-    <h1>{{ site.description }}</h1>
-  </div>
-  {% endif %}
-  <div style="text-align: left; float: left; font-size: 1.6rem;">
+  <div id="subheader" style="text-align: left; float: left; font-size: 1.6rem;">
     <p>
       <a href="{{ "/" | prepend: site.baseurl }}">Home</a><span
             class="u-separate"></span> <a href="{{ "/books/" | prepend:
