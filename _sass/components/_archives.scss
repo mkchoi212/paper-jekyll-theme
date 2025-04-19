@@ -21,7 +21,6 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     border-top: 1px solid #EFF1F3;
-    font-size: 16px;
     @media screen and (min-width: $bp__sm) {
         display: -webkit-box;
         display: -webkit-flex;
@@ -48,7 +47,7 @@
     p {
         @include fs--body;
         color: #515862;
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
