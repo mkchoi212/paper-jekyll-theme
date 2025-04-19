@@ -1,9 +1,9 @@
 <header class="c-page__header">
   <div style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap;">
-    <div style="display: flex; width: 32%;">
-      <h1 style="display: flex; margin: auto; color: navyblue;">{{ site.title }}</h1>
+    <div style="display: flex; width: 32%; text-alight: left;">
+      <h1 style="margin: auto; color: navyblue;">{{ site.title }}</h1>
     </div>
-    <div style="display: flex; position: relative; width: 66%; overflow-wrap: normal; font-size: 14px; vertical-align: middle; text-alight: right; float: right;">
+    <div style="display: flex; position: relative; width: 66%; overflow-wrap: normal; font-size: 14px; text-alight: right; float: right; margin-top: 10px;">
       Process saves us from the poverty of our intentions!
     </div>
   </div>
@@ -14,7 +14,7 @@
       <span class="u-separate"></span> <a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
       <span class="u-separate"></span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
     </div>
-    <div style="display: flex; position: relative; width: 32%; vertical-align: middle; text-alight: right; float: right;">
+    <div style="display: flex; position: relative; width: 32%; float: right;  margin-top: 10px;">
       {% if site.twitter_username %}
         <a href="https://twitter.com/{{ site.twitter_username }}">
           <img src="{{ site.baseurl }}/assets/x.png" alt="X" width="36" height="36" />
