@@ -26,6 +26,7 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
+        font-size: 14px;
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
@@ -47,7 +48,6 @@
     p {
         @include fs--body;
         color: #515862;
-        font-size: 14px;
     }
 }
 
