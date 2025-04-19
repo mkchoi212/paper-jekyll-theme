@@ -1,8 +1,8 @@
 <header class="c-page__header">
-  <div style="text-align: left; border: 2px solid #000; float: left; margin-right: 2%;">
+  <div style="text-align: left; float: left; margin-right: 2%;">
     <h1>{{ site.title}}</h1>
   </div>
-  <div style="text-align: right; border: 2px solid #000; float: right;">
+  <div style="text-align: right; float: right;">
     {% if site.twitter_username %}
       <a href="https://twitter.com/{{ site.twitter_username }}">
         <img src="{{ site.baseurl }}/assets/x.png" alt="X" width="36" height="36" />
@@ -21,11 +21,13 @@
   </div>
   <p>&nbsp;</p>
   {% if page.title == 'Home' %}
-  <h1>{{ site.description }}</h1>
+  <div>
+    <h1>{{ site.description }}</h1>
+  </div>
   {% endif %}
-  <p>
+  <div>
     <a href="{{ "/" | prepend: site.baseurl }}">Home</a><span
           class="u-separate"></span> <a href="{{ "/books/" | prepend:
           site.baseurl }}">Books</a><span class="u-separate"></span> <a href="{{ "/about/" | prepend: site.baseurl }}">About</a><span class="u-separate"></span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
-  </p>
+  </div>
 </header>
