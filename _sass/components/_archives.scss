@@ -8,6 +8,7 @@
 
 .c-archives__year {
     margin-bottom: 2.5rem;
+    font-size: 20px;
     @include fs--heading-2;
 }
 
@@ -20,6 +21,7 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     border-top: 1px solid #EFF1F3;
+    font-size: 16px;
     @media screen and (min-width: $bp__sm) {
         display: -webkit-box;
         display: -webkit-flex;
