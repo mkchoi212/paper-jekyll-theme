@@ -12,11 +12,11 @@ title: Home
   <ul class="c-archives__list">
     {% endif %}
     <li class="c-archives__item">
-      <h3>
+      <h4>
         <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
         <br>
         <small>{{post.description}}</small>
-      </h3>
+      </h4>
       <p>{{ post.date | date: "%b %-d, %Y" }}</p>
     </li>
     {% if forloop.last %}
