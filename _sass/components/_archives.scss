@@ -40,11 +40,13 @@
 
     h3 {
         @include fs--body;
+        font-size: 16px;
     }
 
     p {
         @include fs--body;
         color: #515862;
+        font-size: 16px;
     }
 }
 
