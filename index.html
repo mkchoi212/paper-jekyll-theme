@@ -13,15 +13,7 @@ title: Home
     {% endif %}
     <li class="c-archives__item">
       <div style="float: left; width: auto; height: auto;  max-width: 120px; max-height: 120px;">
-        {% if post.title == 'Joy' %}
-          <img src="../assets/joy.png" alt="{{ post.title }}" />
-        {% elseif post.title == 'Luck' %}
-          <img src="../assets/luck.png" alt="{{ post.title }}" />
-        {% elseif post.title == 'Impact' %}
-          <img src="../assets/impact.png" alt="{{ post.title }}" />
-        {% elseif post.title == 'Unhcarted Territory' %}
-          <img src="../assets/uncharted_territory.png" alt="{{ post.title }}" />
-        {% endif %}
+        <img src="../assets/{{ post.title }}.png" alt="{{ post.title }}" />
       </div>
       <div style="float: left; text-align: left; width: 65%;">
         <h3>
