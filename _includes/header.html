@@ -2,32 +2,27 @@
   <div style="float: left; width: 45%;"><h1 style="color: #4c6d54;">{{ site.title }}</h1></div>
   <div style="float: right; text-align: right; width: 50%; font-size: 14px; margin-top: 5px;">Process saves us from the poverty of our intentions!</div>
   <p><br/></p>
-  <div style="float: left; width: 45%;"><h1 style="color: #4c6d54;">{{ site.title }}</h1></div>
-  <div style="float: right; text-align: right; width: 50%; font-size: 14px; margin-top: 5px;">Process saves us from the poverty of our intentions!</div>
-  <p><br/></p>
-  <div style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap;">
-    <div style="display: flex; width: 66%; font-size: 14px;">
-      <a href="{{ "/" | prepend: site.baseurl }}">Home</a>
-      <span class="u-separate"></span> <a href="{{ "/books/" | prepend: site.baseurl }}">Books</a>
-      <span class="u-separate"></span> <a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
-      <span class="u-separate"></span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
-    </div>
-    <div style="display: flex; position: relative; width: 32%; float: right;  margin-top: 10px;">
-      {% if site.twitter_username %}
-        <a href="https://twitter.com/{{ site.twitter_username }}">
-          <img src="{{ site.baseurl }}/assets/x.png" alt="X" width="36" height="36" />
-        </a>
-        {% if site.github_username %}<span class="u-separate"></span>{% endif %}
-      {% endif %}
-      {% if site.github_username %}
-        <a href="https://github.com/{{ site.github_username }}">Github</a>
-        {% if site.linkedin_username %}<span class="u-separate"></span>{% endif %}
-      {% endif %}
-      {% if site.linkedin_username %}
-        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-          <img src="{{ site.baseurl }}/assets/linkedin.png" alt="LinkedIn" width="30" height="30" />
-        </a>
-      {% endif %}
-    </div>
+  <div style="float: left; width: 66%; font-size: 14px;">
+    <a href="{{ "/" | prepend: site.baseurl }}">Home</a>
+    <span class="u-separate"></span> <a href="{{ "/books/" | prepend: site.baseurl }}">Books</a>
+    <span class="u-separate"></span> <a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
+    <span class="u-separate"></span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+  </div>
+  <div style="float: right; width: 32%;">
+    {% if site.twitter_username %}
+      <a href="https://twitter.com/{{ site.twitter_username }}">
+        <img src="{{ site.baseurl }}/assets/x.png" alt="X" width="36" height="36" />
+      </a>
+      {% if site.github_username %}<span class="u-separate"></span>{% endif %}
+    {% endif %}
+    {% if site.github_username %}
+      <a href="https://github.com/{{ site.github_username }}">Github</a>
+      {% if site.linkedin_username %}<span class="u-separate"></span>{% endif %}
+    {% endif %}
+    {% if site.linkedin_username %}
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+        <img src="{{ site.baseurl }}/assets/linkedin.png" alt="LinkedIn" width="30" height="30" />
+      </a>
+    {% endif %}
   </div>
 </header>
