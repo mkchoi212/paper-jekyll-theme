@@ -1,4 +1,16 @@
 <footer class="c-page__footer">
   <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author }}</p>
-  <p>{% if site.twitter_username %}<a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>{% if site.github_username %}<span class="u-separate"></span>{% endif %}{% endif %}{% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">Github</a>{% endif %}</p>
+  <p>
+    {% if site.twitter_username %}
+      <a href="https://twitter.com/{{ site.twitter_username }}">![_config.yml]({{ site.baseurl }}/assets/x.png)</a>
+      {% if site.github_username %}<span class="u-separate"></span>{% endif %}
+    {% endif %}
+    {% if site.github_username %}
+      <a href="https://github.com/{{ site.github_username }}">Github</a>
+      {% if site.linkedin_username %}<span class="u-separate"></span>{% endif %}
+    {% endif %}
+    {% if site.linkedin_username %}
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">![_config.yml]({{ site.baseurl }}/assets/linkedin.png)</a>
+    {% endif %}
+  </p>
 </footer>
