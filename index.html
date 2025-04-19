@@ -12,13 +12,21 @@ title: Home
   <ul class="c-archives__list">
     {% endif %}
     <li class="c-archives__item">
-      <img src="../assets/joy.png" width="99" height="99" />
-      <h3>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
-        <br>
-        <small style="color: #3c403e;">{{post.description}}</small>
-      </h3>
-      <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+      <div style="float: left; width: 20%;">
+        <span>
+          <img src="../assets/joy.png" width="99" height="99" />
+        </span>
+      </div>
+      <div style="float: right; text-align: left; width: 65%;">
+        <h3>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+          <br>
+          <small style="color: #3c403e;">{{post.description}}</small>
+        </h3>
+      </div>
+      <div style="float: right; text-align: right; width: 10%; font-size: 14px;">
+        <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+      </div>
     </li>
     {% if forloop.last %}
   </ul>
